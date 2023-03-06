@@ -52,12 +52,15 @@ class Trainer:
         for _ in progressbar:
             # Epoch counter
             self.epoch += 1
+            print(f'Epoch {self.epoch}:')
 
             # Training block
             self.train_epoch()
+            print(f'Train loss: {self.results["train_loss"]} Train iou: {self.results["train_iou"]}', end=', ')
 
             # Validation block
             self.val_epoch()
+            print(f'Val loss: {self.results["val_loss"]} Val iou: {self.results["val_iou"]}', end=', ')
 
             # Save checkpoints every epoch
             utils.save_model(self.model, self.save_dir, self.epoch)
@@ -95,7 +98,7 @@ class Trainer:
 
             # Calculate the iou
             iou_value = self.metric(outputs, targets)
-            running_ious.append(iou_value)
+            running_ious.append(iou_value.detach().cpu().numpy())
 
             # Backward pass
             loss.backward()
@@ -127,7 +130,7 @@ class Trainer:
 
                 # Calculate the iou
                 iou_value = self.metric(outputs, targets)
-                running_ious.append(iou_value)
+                running_ious.append(iou_value.detach().cpu().numpy())
 
         self.results["val_loss"].append(np.mean(running_losses))
         self.results["val_iou"].append(np.mean(running_ious))

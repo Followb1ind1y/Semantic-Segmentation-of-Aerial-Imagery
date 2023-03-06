@@ -19,7 +19,7 @@ def save_model(model: torch.nn.Module, target_dir: str, epoch: int):
     target_dir_path.mkdir(parents=True, exist_ok=True)
 
     # Create model save path
-    check_point_name = f"model_{model.name}_epoch_{epoch}"
+    check_point_name = f"model_epoch_{epoch}"
     model_save_path = target_dir_path / check_point_name
 
     # Save the model state_dict()
