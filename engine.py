@@ -7,8 +7,7 @@ import time
 import utils
 import numpy as np
 
-from tqdm.auto import tqdm
-from tqdm import tqdm, trange
+from tqdm import trange
 
 class Trainer:
     def __init__(self, 
@@ -52,15 +51,14 @@ class Trainer:
         for _ in progressbar:
             # Epoch counter
             self.epoch += 1
-            print(f'Epoch {self.epoch}:')
 
             # Training block
             self.train_epoch()
-            print(f'Train loss: {self.results["train_loss"]} Train iou: {self.results["train_iou"]}', end=', ')
+            print(f'\nTrain loss: {self.results["train_loss"][-1]} Train iou: {self.results["train_iou"][-1]}', end=', ')
 
             # Validation block
             self.val_epoch()
-            print(f'Val loss: {self.results["val_loss"]} Val iou: {self.results["val_iou"]}', end=', ')
+            print(f'Val loss: {self.results["val_loss"][-1]} Val iou: {self.results["val_iou"][-1]}\n')
 
             # Save checkpoints every epoch
             utils.save_model(self.model, self.save_dir, self.epoch)
