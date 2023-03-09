@@ -25,6 +25,8 @@
 
 All the training data used in this project are from [Semantic segmentation of aerial imagery](https://www.kaggle.com/datasets/humansintheloop/semantic-segmentation-of-aerial-imagery). The dataset consists of aerial imagery of Dubai obtained by MBRSC satellites and annotated with pixel-wise semantic segmentation in 6 classes (Building, Land, Road, etc.). The total volume of the dataset is 72 images grouped into 6 larger tiles. [UAVid Semantic Segmentation Dataset](https://www.kaggle.com/datasets/titan15555/uavid-semantic-segmentation-dataset) was also used to test the performance of the model.
 
+<center><img src="img/example5.png" width=550px /></center>
+
 ##  **Preprocessing**
 
 ### **Cropping and Patchifying**

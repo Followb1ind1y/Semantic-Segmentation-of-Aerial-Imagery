@@ -1,5 +1,6 @@
 Semantic_segmentation_dataset/
 Patches/
 train_split/
+others/
 .DS_Store
 *.csv
