@@ -47,23 +47,22 @@ class Trainer:
         start_time = time.time()
 
         progressbar = trange(self.epochs, desc="Progress")
-
         for _ in progressbar:
             # Epoch counter
             self.epoch += 1
 
             # Training block
             self.train_epoch()
-            print(f'\nTrain loss: {self.results["train_loss"][-1]} Train iou: {self.results["train_iou"][-1]}', end=', ')
 
             # Validation block
             self.val_epoch()
-            print(f'Val loss: {self.results["val_loss"][-1]} Val iou: {self.results["val_iou"][-1]}\n')
+            print(f'\nEpoch {self.epoch}: Train loss: {self.results["train_loss"][-1]} Train iou: {self.results["train_iou"][-1]} Val loss: {self.results["val_loss"][-1]} Val iou: {self.results["val_iou"][-1]}')
 
             # Save checkpoints every epoch
             utils.save_model(self.model, self.save_dir, self.epoch)
 
         time_elapsed = time.time() - start_time
+        print('\n')
         print('-' * 20)
         print(f'Training complete in {time_elapsed // 60:.0f}m {time_elapsed % 60:.0f}s')
 
@@ -96,7 +95,7 @@ class Trainer:
 
             # Calculate the iou
             iou_value = self.metric(outputs, targets)
-            running_ious.append(iou_value.detach().cpu().numpy())
+            running_ious.append(iou_value)
 
             # Backward pass
             loss.backward()
@@ -128,7 +127,7 @@ class Trainer:
 
                 # Calculate the iou
                 iou_value = self.metric(outputs, targets)
-                running_ious.append(iou_value.detach().cpu().numpy())
+                running_ious.append(iou_value)
 
         self.results["val_loss"].append(np.mean(running_losses))
         self.results["val_iou"].append(np.mean(running_ious))
