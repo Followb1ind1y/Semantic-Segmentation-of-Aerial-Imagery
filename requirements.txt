@@ -1,0 +1,10 @@
+matplotlib==3.7.1
+numpy==1.24.2
+opencv-python==4.6.0.66
+scikit-image==0.20.0
+scipy==1.9.1
+segmentation-models-pytorch==0.3.2
+split-folders==0.5.1
+torch==1.13.1
+torchvision==0.14.1
+tqdm==4.65.0
