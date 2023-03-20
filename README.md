@@ -51,7 +51,7 @@ Since Class colours are in hex, whilst the mask images are in RGB. We need to co
 * **Fine-Tuning Models:** Build the UNet model for multi-class semantic segmentation. Implement custom multiclass dice loss and mean IoU score functions. Train the image dataset using different pretrained encoders (e.g. resnet101, efficientnet-b4, mobilenet_v2).
 * **Evaluation:** Evaluate the models on the test set and UAVid Semantic Segmentation Dataset. Display the predictions on images.
 
-## **Results**
+## **Result**
 
 <center><img src="img/result.png" width=425px /></center>
 
