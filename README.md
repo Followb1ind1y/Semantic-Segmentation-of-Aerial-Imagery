@@ -67,6 +67,8 @@ Since Class colours are in hex, whilst the mask images are in RGB. We need to co
 > [2] Humans In The Loop. (2020, May 29). Semantic segmentation of aerial imagery. Kaggle. Retrieved March 20, 2023, from `https://www.kaggle.com/datasets/humansintheloop/semantic-segmentation-of-aerial-imagery` 
 >
 > [3] Schmidt, J. (2023, January 18). Creating and training a U-net model with Pytorch for 2D &amp; 3D Semantic Segmentation: Dataset... Medium. Retrieved March 20, 2023, from `https://towardsdatascience.com/creating-and-training-a-u-net-model-with-pytorch-for-2d-3d-semantic-segmentation-dataset-fb1f7f80fe55`
+>
+> [4] Davies, A. J. (2022, November 10). Semantic segmentation of aerial imagery using U-net in python. Medium. Retrieved March 20, 2023, from `https://towardsdatascience.com/semantic-segmentation-of-aerial-imagery-using-u-net-in-python-552705238514`
 
 ## **Licence**
 
