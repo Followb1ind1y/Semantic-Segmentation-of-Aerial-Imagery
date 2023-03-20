@@ -61,7 +61,7 @@ Since Class colours are in hex, whilst the mask images are in RGB. We need to co
 <center><img src="img/example3.png" width=550px /></center>
 <center><img src="img/example4.png" width=550px /></center>
 
-## Reference
+## **Reference**
 > [1] Ronneberger, O., Fischer, P., &amp; Brox, T. (2015, May 18). U-Net: Convolutional Networks for Biomedical Image Segmentation. arXiv.org. Retrieved March 20, 2023, from `https://arxiv.org/abs/1505.04597`
 >
 > [2] Humans In The Loop. (2020, May 29). Semantic segmentation of aerial imagery. Kaggle. Retrieved March 20, 2023, from `https://www.kaggle.com/datasets/humansintheloop/semantic-segmentation-of-aerial-imagery` 
