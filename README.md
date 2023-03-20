@@ -53,7 +53,7 @@ Since Class colours are in hex, whilst the mask images are in RGB. We need to co
 
 ## **Results**
 
-<center><img src="img/result.png" width=350px /></center>
+<center><img src="img/result.png" width=450px /></center>
 
 ## **Demonstration**
 
@@ -62,11 +62,11 @@ Since Class colours are in hex, whilst the mask images are in RGB. We need to co
 <center><img src="img/example4.png" width=550px /></center>
 
 ## Reference
-> [1] Ronneberger, O., Fischer, P., &amp; Brox, T. (2015, May 18). U-Net: Convolutional Networks for Biomedical Image Segmentation. arXiv.org. Retrieved March 20, 2023, from https://arxiv.org/abs/1505.04597 
+> [1] Ronneberger, O., Fischer, P., &amp; Brox, T. (2015, May 18). U-Net: Convolutional Networks for Biomedical Image Segmentation. arXiv.org. Retrieved March 20, 2023, from `https://arxiv.org/abs/1505.04597`
 >
 > [2] Humans In The Loop. (2020, May 29). Semantic segmentation of aerial imagery. Kaggle. Retrieved March 20, 2023, from https://www.kaggle.com/datasets/humansintheloop/semantic-segmentation-of-aerial-imagery 
 >
-> [3] Schmidt, J. (2023, January 18). Creating and training a U-net model with Pytorch for 2D &amp; 3D Semantic Segmentation: Dataset... Medium. Retrieved March 20, 2023, from https://towardsdatascience.com/creating-and-training-a-u-net-model-with-pytorch-for-2d-3d-semantic-segmentation-dataset-fb1f7f80fe55 
+> [3] Schmidt, J. (2023, January 18). Creating and training a U-net model with Pytorch for 2D &amp; 3D Semantic Segmentation: Dataset... Medium. Retrieved March 20, 2023, from https://towardsdatascience.com/creating-and-training-a-u-net-model-with-pytorch-for-2d-3d-semantic-segmentation-dataset-fb1f7f80fe55
 
 ## **Licence**
 
